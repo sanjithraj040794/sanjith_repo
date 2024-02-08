@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Age calculator</h1>
+    <input class="date_input" type="date" value="" />
+    <button type="submit" onclick="age()">Submit</button>
+    <script>
+        var age = () => {
+            var inpute_date = () => {
+                var date_value = document.querySelector(".date_input").value;
+                var date_array = [];
+                date_array.push(date_value);
+
+                const split_value = date_array[0].split("-");
+                // console.log(split_value)
+                return split_value;
+            }
+            var user_date = inpute_date();
+            var script_date =(user_date)=>{
+                console.log(user_date);
+            }
+            script_date(user_date);
+      
+        }
+
+
+
+    </script>
+</body>
+
+</html>
